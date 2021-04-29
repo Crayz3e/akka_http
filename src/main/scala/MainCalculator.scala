@@ -11,7 +11,7 @@ case class GetRequest(res: String)
 case class GetResponse(res: Double)
 
 class MainCalculator extends Actor with ActorLogging {
-  implicit val timeout = Timeout(5 seconds)
+  implicit val timeout = Timeout(10 seconds)
   var message = ""
   var result = 0.0
   val calculatorActor = context.actorOf(Props(new Calculator), "calculator")
@@ -22,7 +22,7 @@ class MainCalculator extends Actor with ActorLogging {
       log.info(s"Request: $message")
       calculatorActor ! SetRequest(message)
       val respF = calculatorActor ? GetRequest("Result")
-      respF pipeTo self
+      respF pipeTo sender()
 
     case r: GetResponse =>
       // log.warning(s"Response: ${r.res}")

@@ -1,4 +1,6 @@
+import akka.actor.{ActorSystem, Props, TypedActor}
 import akka.actor.typed.{ActorSystem, Behavior}
+import akka.actor.{ActorSystem => OldActorSystem}
 import akka.actor.typed.scaladsl.Behaviors
 import org.slf4j.{Logger, LoggerFactory}
 
@@ -11,11 +13,13 @@ object Main extends App {
     implicit val ec = context.executionContext
     implicit val sys = context.system
 
-    val router = new Router()
+    val calc = OldActorSystem("calc")
+    val calculator = calc.actorOf(Props(new MainCalculator), "calculator")
+    val router = new Router(calculator)
 
     Server.Start(router.route)
     Behaviors.empty
   }
 
-  val system = ActorSystem[Nothing](rootBehavior, "calculator")
+  val system = akka.actor.typed.ActorSystem[Nothing](rootBehavior, "calculator")
 }
