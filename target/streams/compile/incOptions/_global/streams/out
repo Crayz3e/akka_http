@@ -1,0 +1,51 @@
+[debug] Created transactional ClassFileManager with tempDir = C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes.bak
+[debug] About to delete class files:
+[debug] 	Server.class
+[debug] 	Start.class
+[debug] 	GetRequest$.class
+[debug] 	Start$.class
+[debug] 	Main$delayedInit$body.class
+[debug] 	Calculator.class
+[debug] 	GetRequest.class
+[debug] 	SetRequest.class
+[debug] 	SetRequest$.class
+[debug] 	GetResponse.class
+[debug] 	Main.class
+[debug] 	MainCalculator.class
+[debug] 	Main$.class
+[debug] 	Calculator$$anonfun$receive$1.class
+[debug] 	MainCalculator$$anonfun$receive$1.class
+[debug] 	Server$.class
+[debug] 	GetResponse$.class
+[debug] 	Router.class
+[debug] We backup class files:
+[debug] 	Server.class
+[debug] 	GetRequest$.class
+[debug] 	Main$delayedInit$body.class
+[debug] 	Calculator.class
+[debug] 	GetRequest.class
+[debug] 	SetRequest.class
+[debug] 	SetRequest$.class
+[debug] 	GetResponse.class
+[debug] 	Main.class
+[debug] 	Main$.class
+[debug] 	Calculator$$anonfun$receive$1.class
+[debug] 	Server$.class
+[debug] 	GetResponse$.class
+[debug] 	Router.class
+[debug] Registering generated classes:
+[debug] 	Server.class
+[debug] 	GetRequest$.class
+[debug] 	Main$delayedInit$body.class
+[debug] 	Calculator.class
+[debug] 	GetRequest.class
+[debug] 	SetRequest.class
+[debug] 	SetRequest$.class
+[debug] 	GetResponse.class
+[debug] 	Main.class
+[debug] 	Main$.class
+[debug] 	Calculator$$anonfun$receive$1.class
+[debug] 	Server$.class
+[debug] 	GetResponse$.class
+[debug] 	Router.class
+[debug] Removing the temporary directory used for backing up class files: C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes.bak

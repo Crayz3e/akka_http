@@ -21,20 +21,26 @@ import scala.concurrent.duration.DurationInt
 
 
 class Router(calculator: ActorRef)(implicit system: ActorSystem[_],  ex:ExecutionContext) extends Directives {
-  implicit val timeout = Timeout(10 seconds)
+  implicit val timeout = Timeout(1 seconds)
 
   def route: Route = concat(
     path("calculator"){
       parameters('expression.as[String]) {
         (expression) =>
+          var message = ""
           calculator ! SetRequest(expression)
-          return onComplete(calculator ? GetRequest("")) {
-            case Success(value) =>
-              complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, value.toString))
-
+          val result = calculator ? GetRequest("")
+          result onComplete {
+            case Success(value: GetResponse) =>
+              message = value.res.toString
+              system.log.info(message)
             case Failure(error) =>
-              complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "failure"))
+              message = "failure"
+              system.log.info("failure")
           }
+
+          Thread.sleep(1000)
+          complete(message)
       }
     }
   )

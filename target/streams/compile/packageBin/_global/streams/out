@@ -18,10 +18,6 @@
 [debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\Main$delayedInit$body.class
 [debug] 	Main.class
 [debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\Main.class
-[debug] 	MainCalculator$$anonfun$receive$1.class
-[debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\MainCalculator$$anonfun$receive$1.class
-[debug] 	MainCalculator.class
-[debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\MainCalculator.class
 [debug] 	Router.class
 [debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\Router.class
 [debug] 	Server$.class
@@ -32,8 +28,4 @@
 [debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\SetRequest$.class
 [debug] 	SetRequest.class
 [debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\SetRequest.class
-[debug] 	Start$.class
-[debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\Start$.class
-[debug] 	Start.class
-[debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\Start.class
 [debug] Done packaging.

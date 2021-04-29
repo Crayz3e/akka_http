@@ -1,6 +1,10 @@
 import util.control.Breaks._
 import akka.actor._
 
+case class SetRequest(expr: String)
+case class GetRequest(res: String)
+case class GetResponse(res: Double)
+
 class Calculator extends Actor with ActorLogging{
   var expr = ""
 

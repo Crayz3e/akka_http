@@ -14,7 +14,7 @@ object Main extends App {
     implicit val sys = context.system
 
     val calc = OldActorSystem("calc")
-    val calculator = calc.actorOf(Props(new MainCalculator), "calculator")
+    val calculator = calc.actorOf(Props(new Calculator), "calculator")
     val router = new Router(calculator)
 
     Server.Start(router.route)
