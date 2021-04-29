@@ -1,0 +1,93 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.1 (Oracle Corporation Java 15.0.1)
+[debug]       Load.loadUnit: plugins took 66.6138ms
+[debug]       Load.loadUnit: defsScala took 0.2851ms
+[debug] [Loading] Scanning directory C:\Users\Alibek\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Alibek\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 13.7004 ms
+[debug]           Load.resolveProject(global-plugins) took 31.3541ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Alibek\.sbt\1.0\plugins, plugins: List(<none>))) took 74.9163ms
+[debug] [Loading] Done in C:\Users\Alibek\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 90.1945ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.1872ms
+[debug]     Load.loadUnit(file:/C:/Users/Alibek/.sbt/1.0/plugins/, ...) took 164.8085ms
+[debug]   Load.apply: load took 283.4175ms
+[debug]   Load.apply: resolveProjects took 3.8648ms
+[debug]   Load.apply: finalTransforms took 45.0716ms
+[debug]   Load.apply: config.delegates took 5.6501ms
+[debug]   Load.apply: Def.make(settings)... took 509.1442ms
+[debug]   Load.apply: structureIndex took 64.7077ms
+[debug]   Load.apply: mkStreams took 0.9104ms
+[info] loading global plugins from C:\Users\Alibek\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 1806.6435ms
+[debug]           Load.loadUnit: plugins took 15.4781ms
+[debug]           Load.loadUnit: defsScala took 0.0028ms
+[debug] [Loading] Scanning directory C:\Users\Alibek\IdeaProjects\akka_http\calculator\project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Alibek\IdeaProjects\akka_http\calculator\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.0473 ms
+[debug]               Load.resolveProject(calculator-build) took 0.8957ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id calculator-build, base: C:\Users\Alibek\IdeaProjects\akka_http\calculator\project, plugins: List(<none>))) took 2.301ms
+[debug] [Loading] Done in C:\Users\Alibek\IdeaProjects\akka_http\calculator\project, returning: (calculator-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 3.6099ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.0069ms
+[debug]         Load.loadUnit(file:/C:/Users/Alibek/IdeaProjects/akka_http/calculator/project/, ...) took 19.6028ms
+[debug]       Load.apply: load took 20.5489ms
+[debug]       Load.apply: resolveProjects took 0.066ms
+[debug]       Load.apply: finalTransforms took 9.1228ms
+[debug]       Load.apply: config.delegates took 0.3081ms
+[debug]       Load.apply: Def.make(settings)... took 64.9298ms
+[debug]       Load.apply: structureIndex took 26.7011ms
+[debug]       Load.apply: mkStreams took 0.0021ms
+[info] loading project definition from C:\Users\Alibek\IdeaProjects\akka_http\calculator\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 286.6128ms
+[debug]     Load.loadUnit: defsScala took 0.0019ms
+[debug] [Loading] Scanning directory C:\Users\Alibek\IdeaProjects\akka_http\calculator
+[debug]       Load.loadUnit: mkEval took 3.595ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Alibek\IdeaProjects\akka_http\calculator, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 0.9463 ms
+[info] loading settings for project calculator from build.sbt ...
+[debug]         Load.resolveProject(calculator) took 2.1435ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id calculator, base: C:\Users\Alibek\IdeaProjects\akka_http\calculator, plugins: List(<none>))) took 3.5105ms
+[debug] [Loading] Done in C:\Users\Alibek\IdeaProjects\akka_http\calculator, returning: (calculator)
+[debug]     Load.loadUnit: loadedProjectsRaw took 99.9567ms
+[debug]     Load.loadUnit: cleanEvalClasses took 9.1261ms
+[debug]   Load.loadUnit(file:/C:/Users/Alibek/IdeaProjects/akka_http/calculator/, ...) took 396.4014ms
+[debug] Load.apply: load took 397.7327ms
+[debug] Load.apply: resolveProjects took 0.0961ms
+[debug] Load.apply: finalTransforms took 6.4091ms
+[debug] Load.apply: config.delegates took 0.3572ms
+[debug] Load.apply: Def.make(settings)... took 68.2322ms
+[debug] Load.apply: structureIndex took 21.5694ms
+[debug] Load.apply: mkStreams took 0.0025ms
+[info] set current project to calculator (in build file:/C:/Users/Alibek/IdeaProjects/akka_http/calculator/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes ...
+[warn] 1 deprecation (since 2.13.0); re-run with -deprecation for details
+[warn] one warning found
+[info] done compiling

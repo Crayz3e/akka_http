@@ -1,0 +1,15 @@
+[debug] Packaging C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\calculator_2.13-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	Main$.class
+[debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\Main$.class
+[debug] 	Main$delayedInit$body.class
+[debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\Main$delayedInit$body.class
+[debug] 	Main.class
+[debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\Main.class
+[debug] 	Router.class
+[debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\Router.class
+[debug] 	Server$.class
+[debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\Server$.class
+[debug] 	Server.class
+[debug] 	  C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes\Server.class
+[debug] Done packaging.
