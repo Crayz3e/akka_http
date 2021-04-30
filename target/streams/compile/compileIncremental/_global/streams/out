@@ -1,33 +1,56 @@
 [debug] [zinc] IncrementalCompile -----------
 [debug] IncrementalCompile.incrementalCompile
-[debug] previous = Stamps for: 18 products, 5 sources, 8 libraries
-[debug] current source = Set(${BASE}/src/main/scala/Calculator.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/Router.scala, ${BASE}/src/main/scala/Server.scala)
-[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(${BASE}/src/main/scala/MainCalculator.scala), changed = Set(${BASE}/src/main/scala/Calculator.scala), unmodified = ...),Set(${BASE}/target/scala-2.13/classes/Start.class, ${BASE}/target/scala-2.13/classes/GetRequest$.class, ${BASE}/target/scala-2.13/classes/Start$.class, ${BASE}/target/scala-2.13/classes/Calculator.class, ${BASE}/target/scala-2.13/classes/GetRequest.class, ${BASE}/target/scala-2.13/classes/SetRequest.class, ${BASE}/target/scala-2.13/classes/SetRequest$.class, ${BASE}/target/scala-2.13/classes/GetResponse.class, ${BASE}/target/scala-2.13/classes/MainCalculator.class, ${BASE}/target/scala-2.13/classes/Calculator$$anonfun$receive$1.class, ${BASE}/target/scala-2.13/classes/MainCalculator$$anonfun$receive$1.class, ${BASE}/target/scala-2.13/classes/GetResponse$.class),Set(),API Changes: Set())
+[debug] previous = Stamps for: 42 products, 12 sources, 11 libraries
+[debug] current source = Set(${BASE}/src/main/scala/Validator.scala, ${BASE}/src/main/scala/Router.scala, ${BASE}/src/main/scala/todoDirectives.scala, ${BASE}/src/main/scala/Calculator.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/ValidatorDirectives.scala, ${BASE}/src/main/scala/todoRepository.scala, ${BASE}/src/main/scala/SavedTodoRepository.scala, ${BASE}/src/main/scala/ApiError.scala, ${BASE}/src/main/scala/todo.scala, ${BASE}/src/main/scala/SavedTodo.scala, ${BASE}/src/main/scala/Server.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/Validator.scala, ${BASE}/src/main/scala/Router.scala, ${BASE}/src/main/scala/ApiError.scala), unmodified = ...),Set(${BASE}/target/scala-2.13/classes/ApiError$.class, ${BASE}/target/scala-2.13/classes/CreateTodoValidator$.class, ${BASE}/target/scala-2.13/classes/Router$anon$importedEncoder$macro$65$1.class, ${BASE}/target/scala-2.13/classes/Router$anon$importedEncoder$macro$65$1$$anon$5.class, ${BASE}/target/scala-2.13/classes/ApiError.class, ${BASE}/target/scala-2.13/classes/Router$anon$importedEncoder$macro$65$1$anon$macro$63$1.class, ${BASE}/target/scala-2.13/classes/Router.class, ${BASE}/target/scala-2.13/classes/Router$anon$importedEncoder$macro$65$1$$anon$6.class),Set(),API Changes: Set())
 [debug] 
 [debug] Initial source changes:
-[debug] 	removed: Set(${BASE}/src/main/scala/MainCalculator.scala)
+[debug] 	removed: Set()
 [debug] 	added: Set()
-[debug] 	modified: Set(${BASE}/src/main/scala/Calculator.scala)
-[debug] Invalidated products: Set(${BASE}/target/scala-2.13/classes/Start.class, ${BASE}/target/scala-2.13/classes/GetRequest$.class, ${BASE}/target/scala-2.13/classes/Start$.class, ${BASE}/target/scala-2.13/classes/Calculator.class, ${BASE}/target/scala-2.13/classes/GetRequest.class, ${BASE}/target/scala-2.13/classes/SetRequest.class, ${BASE}/target/scala-2.13/classes/SetRequest$.class, ${BASE}/target/scala-2.13/classes/GetResponse.class, ${BASE}/target/scala-2.13/classes/MainCalculator.class, ${BASE}/target/scala-2.13/classes/Calculator$$anonfun$receive$1.class, ${BASE}/target/scala-2.13/classes/MainCalculator$$anonfun$receive$1.class, ${BASE}/target/scala-2.13/classes/GetResponse$.class)
+[debug] 	modified: Set(${BASE}/src/main/scala/Validator.scala, ${BASE}/src/main/scala/Router.scala, ${BASE}/src/main/scala/ApiError.scala)
+[debug] Invalidated products: Set(${BASE}/target/scala-2.13/classes/ApiError$.class, ${BASE}/target/scala-2.13/classes/CreateTodoValidator$.class, ${BASE}/target/scala-2.13/classes/Router$anon$importedEncoder$macro$65$1.class, ${BASE}/target/scala-2.13/classes/Router$anon$importedEncoder$macro$65$1$$anon$5.class, ${BASE}/target/scala-2.13/classes/ApiError.class, ${BASE}/target/scala-2.13/classes/Router$anon$importedEncoder$macro$65$1$anon$macro$63$1.class, ${BASE}/target/scala-2.13/classes/Router.class, ${BASE}/target/scala-2.13/classes/Router$anon$importedEncoder$macro$65$1$$anon$6.class)
 [debug] External API changes: API Changes: Set()
 [debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated classes: Set(GetRequest, Start, SetRequest, MainCalculator, Router, Calculator, GetResponse)
+[debug] Initial directly invalidated classes: Set(CreateTodoValidator, Validator, Router, ApiError)
 [debug] Sources indirectly invalidated by:
-[debug] 	product: Set(${BASE}/src/main/scala/Calculator.scala, ${BASE}/src/main/scala/MainCalculator.scala)
+[debug] 	product: Set(${BASE}/src/main/scala/Validator.scala, ${BASE}/src/main/scala/Router.scala, ${BASE}/src/main/scala/ApiError.scala)
 [debug] 	binary dep: Set()
 [debug] 	external source: Set()
-[debug] All initially invalidated classes: Set(GetRequest, Start, SetRequest, MainCalculator, Router, Calculator, GetResponse)
-[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/Calculator.scala, ${BASE}/src/main/scala/MainCalculator.scala)
-[debug] Initial set of included nodes: GetRequest, Start, SetRequest, MainCalculator, Router, Calculator, GetResponse
-[debug] Recompiling all sources: number of invalidated sources > 50.0% of all sources
+[debug] All initially invalidated classes: Set(CreateTodoValidator, Validator, Router, ApiError)
+[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/Validator.scala, ${BASE}/src/main/scala/Router.scala, ${BASE}/src/main/scala/ApiError.scala)
+[debug] Initial set of included nodes: CreateTodoValidator, Validator, Router, ApiError
 [debug] compilation cycle 1
-[info] compiling 4 Scala sources to C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes ...
+[info] compiling 3 Scala sources to C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes ...
 [debug] Getting org.scala-sbt:compiler-bridge_2.13:1.4.1:compile for Scala 2.13.5
-[debug] [zinc] Running cached compiler 73246569 for Scala compiler version 2.13.5
+[debug] [zinc] Running cached compiler 599eda93 for Scala compiler version 2.13.5
 [debug] [zinc] The Scala compiler is invoked with:
 [debug] 	-bootclasspath
 [debug] 	C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.5\scala-library-2.13.5.jar
 [debug] 	-classpath
 [debug] 	C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-actor-typed_2.13\2.6.8\akka-actor-typed_2.13-2.6.8.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-stream_2.13\2.6.8\akka-stream_2.13-2.6.8.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-http_2.13\10.2.4\akka-http_2.13-10.2.4.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-core_2.13\0.13.0\circe-core_2.13-0.13.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-generic_2.13\0.12.3\circe-generic_2.13-0.12.3.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-parser_2.13\0.13.0\circe-parser_2.13-0.13.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\de\heikoseeberger\akka-http-circe_2.13\1.36.0\akka-http-circe_2.13-1.36.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-actor_2.13\2.6.8\akka-actor_2.13-2.6.8.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-slf4j_2.13\2.6.8\akka-slf4j_2.13-2.6.8.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-protobuf-v3_2.13\2.6.8\akka-protobuf-v3_2.13-2.6.8.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\ssl-config-core_2.13\0.4.1\ssl-config-core_2.13-0.4.1.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-http-core_2.13\10.2.4\akka-http-core_2.13-10.2.4.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-numbers_2.13\0.13.0\circe-numbers_2.13-0.13.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-core_2.13\2.1.0\cats-core_2.13-2.1.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\chuusai\shapeless_2.13\2.3.3\shapeless_2.13-2.3.3.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-jawn_2.13\0.13.0\circe-jawn_2.13-0.13.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\config\1.4.0\config-1.4.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-java8-compat_2.13\0.9.0\scala-java8-compat_2.13-0.9.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parser-combinators_2.13\1.1.2\scala-parser-combinators_2.13-1.1.2.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-parsing_2.13\10.2.4\akka-parsing_2.13-10.2.4.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\twitter\hpack\1.0.2\hpack-1.0.2.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-macros_2.13\2.1.0\cats-macros_2.13-2.1.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-kernel_2.13\2.1.0\cats-kernel_2.13-2.1.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\jawn-parser_2.13\1.0.0\jawn-parser_2.13-1.0.0.jar
-[debug] Scala compilation took 3.374236301 s
+[debug] Invalidating (transitively) by inheritance from ApiError...
+[debug] Initial set of included nodes: ApiError
+[debug] Invalidated by transitive inheritance dependency: Set(ApiError)
+[debug] None of the modified names appears in source file of Validator. This dependency is not being considered for invalidation.
+[debug] None of the modified names appears in source file of ValidatorDirectives. This dependency is not being considered for invalidation.
+[debug] The following modified names cause invalidation of CreateTodoValidator: Set(UsedName(emptyTitleDescription,[Default]))
+[debug] None of the modified names appears in source file of todoDirectives. This dependency is not being considered for invalidation.
+[debug] The following modified names cause invalidation of Router: Set(UsedName(DuplicateTitle,[Default]))
+[debug] Change NamesChange(ApiError,ModifiedNames(changes = UsedName(emptyTitleDescription,[Default]), UsedName(DuplicateTitle,[Default]), UsedName(finalize,[Default]))) invalidates 3 classes due to The ApiError has the following regular definitions changed:
+[debug] 	UsedName(emptyTitleDescription,[Default]), UsedName(DuplicateTitle,[Default]), UsedName(finalize,[Default]).
+[debug]   > by transitive inheritance: Set(ApiError)
+[debug]   > 
+[debug]   > by member reference: Set(CreateTodoValidator, Router)
+[debug]         
+[debug] New invalidations:
+[debug] 	CreateTodoValidator
+[debug] 	Router
+[debug] Initial set of included nodes: CreateTodoValidator, Router
+[debug] Including Router by CreateTodoValidator
+[debug] Including Main by Router
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] Final step, transitive dependencies:
+[debug] 	Set(CreateTodoValidator, Router)
+[debug] No classes were invalidated.
+[debug] Scala compilation took 4.419388201 s
 [info] done compiling

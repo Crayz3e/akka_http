@@ -13,9 +13,12 @@ object Main extends App {
     implicit val ec = context.executionContext
     implicit val sys = context.system
 
+    val mockTodos:Seq[Todo] = Seq()
+
+    val todos = new SavedTodoRepository(mockTodos)
     val calc = OldActorSystem("calc")
     val calculator = calc.actorOf(Props(new Calculator), "calculator")
-    val router = new Router(calculator)
+    val router = new Router(calculator, todos)
 
     Server.Start(router.route)
     Behaviors.empty

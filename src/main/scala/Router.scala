@@ -20,7 +20,10 @@ import io.circe.generic.auto._
 import scala.concurrent.duration.DurationInt
 
 
-class Router(calculator: ActorRef)(implicit system: ActorSystem[_],  ex:ExecutionContext) extends Directives {
+class Router(calculator: ActorRef, todoRepository: todoRepository)(implicit system: ActorSystem[_],  ex:ExecutionContext)
+  extends  Directives
+  with todoDirectives
+  with ValidatorDirectives {
   implicit val timeout = Timeout(1 seconds)
 
   def route: Route = concat(
@@ -41,6 +44,38 @@ class Router(calculator: ActorRef)(implicit system: ActorSystem[_],  ex:Executio
 
           Thread.sleep(1000)
           complete(message)
+      }
+    },
+
+    path("todos") {
+      pathEndOrSingleSlash {
+        concat(
+          get {
+            handleWithGeneric(todoRepository.all()) {
+              todos => complete(todos)
+            }
+          },
+          post {
+            entity(as[CreateTodo]) { createTodo =>
+              validateWith(CreateTodoValidator)(createTodo){
+                handleWithGeneric(todoRepository.create(createTodo)){
+                  todo =>
+                    val seq = todoRepository.all()
+                    for (i <- seq) {
+                      for (j <- i) {
+                        if (j.title.equals(createTodo.title)) {
+                          Some(ApiError.DuplicateTitle)
+                          complete("failure")
+                        }
+                      }
+                    }
+
+                    complete(todo)
+                }
+              }
+            }
+          }
+        )
       }
     }
   )
