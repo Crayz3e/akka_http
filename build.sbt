@@ -6,7 +6,7 @@ enablePlugins(JavaAppPackaging, AshScriptPlugin)
 dockerBaseImage := "openjdk:8-jre-alpine"
 packageName in Docker := "calculator"
 
-name := "calculator"
+name := "akkacalculator"
 
 version := "0.1"
 
