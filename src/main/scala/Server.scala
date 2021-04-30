@@ -6,7 +6,7 @@ import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success, Try}
 
 object Server {
-  val host = "localhost"
+  val host = "0.0.0.0"
   val port = Try(System.getenv("PORT")).map(_.toInt).getOrElse(9000)
   def Start(routes: Route)(implicit system: ActorSystem[_], ex: ExecutionContext) {
     val futurebinding = Http().newServerAt(host, port).bind(routes: Route)

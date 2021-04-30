@@ -22,7 +22,7 @@
 [debug] compilation cycle 1
 [info] compiling 1 Scala source to C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes ...
 [debug] Getting org.scala-sbt:compiler-bridge_2.13:1.4.1:compile for Scala 2.13.5
-[debug] [zinc] Running cached compiler 44325775 for Scala compiler version 2.13.5
+[debug] [zinc] Running cached compiler 74e41554 for Scala compiler version 2.13.5
 [debug] [zinc] The Scala compiler is invoked with:
 [debug] 	-bootclasspath
 [debug] 	C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.5\scala-library-2.13.5.jar
@@ -34,5 +34,5 @@
 [debug] Final step, transitive dependencies:
 [debug] 	Set()
 [debug] No classes were invalidated.
-[debug] Scala compilation took 1.9388844 s
+[debug] Scala compilation took 1.9760572 s
 [info] done compiling
