@@ -1,0 +1,60 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t calculator:0.1 .[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\docker\stage[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#1 [internal] load build definition from Dockerfile[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#1 sha256:9953a092556a6d0a30ff3760268826efb2276495c3166037da0607327e7ceeb3[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#1 transferring dockerfile: 1.02kB done[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#1 DONE 0.0s[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#2 [internal] load .dockerignore[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#2 sha256:3801fd7f722e354f90631d5d960c3f3efaa1b9bf4d45b216627af45edd27caa0[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#2 transferring context: 2B done[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#2 DONE 0.0s[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#3 [internal] load metadata for docker.io/library/openjdk:8-jre-alpine[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#3 sha256:54c6f6c810fe8adaea295f024fab13dc1a9a70e363a76f4d0bfb6e7ae191ebae[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#3 DONE 3.5s[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#4 [stage0 1/7] FROM docker.io/library/openjdk:8-jre-alpine@sha256:f362b165b870ef129cbe730f29065ff37399c0aa8bcab3e44b51c302938c9193[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:0fa9d77ffba4c0cfb36bec29d2e0b02d36226b626b50f29355d5a97517be8e0b[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#4 DONE 0.0s[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#8 [internal] load build context[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#8 sha256:be36371c34951f803b2c6b67311aca9ba53ecea1b24a16aa35f58299b7b4d3df[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#8 transferring context: 2.73kB done[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#8 DONE 0.0s[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#12 [stage0 6/7] RUN ["chmod", "-R", "u=rX,g=rX", "/2/opt/docker"][0m[0J
+[0m[[0m[31merror[0m] [0m[0m#12 sha256:27ce45a03aa014e9b08ee6c91d49a643dd849248e7d2954b59d560d3404a60e9[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#12 CACHED[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#5 [mainstage 2/5] RUN id -u demiourgos728 1>/dev/null 2>&1 || (( getent group 0 1>/dev/null 2>&1 || ( type groupadd 1>/dev/null 2>&1 && groupadd -g 0 root || addgroup -g 0 -S root )) && ( type useradd 1>/dev/null 2>&1 && useradd --system --create-home --uid 1001 --gid 0 demiourgos728 || adduser -S -u 1001 -G root demiourgos728 ))[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#5 sha256:1e0169606f1b8dea4ac1d3a9760d1bf13a8328c6919eaa2f53fc1948ccd4f2e9[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#5 CACHED[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#13 [stage0 7/7] RUN ["chmod", "u+x,g+x", "/1/opt/docker/bin/calculator"][0m[0J
+[0m[[0m[31merror[0m] [0m[0m#13 sha256:6737fe341e2e628e783b08ee412d996bcd3e622ec3ed0cd0d1e1b85cb8aca826[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#13 CACHED[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#14 [mainstage 4/5] COPY --from=stage0 --chown=demiourgos728:root /1/opt/docker /opt/docker[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#14 sha256:34aad47c68211f24b191461c894fc1b16fe134ab66b8cde55c622e738011cd8d[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#14 CACHED[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#10 [stage0 4/7] COPY 2/opt /2/opt[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#10 sha256:5818a637bdaa1a3941351afb096e8811d638beb424a31549c80b3abd1054c0d7[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#10 CACHED[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#9 [stage0 3/7] COPY 1/opt /1/opt[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#9 sha256:78bce58c2d1acbaac3906c95e2007a15a3f065cdb69b3e8121f8f9f32df7878d[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#9 CACHED[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#7 [stage0 2/7] WORKDIR /opt/docker[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#7 sha256:f3f59e8ad8ac9263708c740a121756ee62429c19b6156e19fe50bd0cc8b8f77e[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#7 CACHED[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#11 [stage0 5/7] RUN ["chmod", "-R", "u=rX,g=rX", "/1/opt/docker"][0m[0J
+[0m[[0m[31merror[0m] [0m[0m#11 sha256:0bc747a5de38fe6655c2a0a775a5cb6f65401496c4132345018e9f954480d9b2[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#11 CACHED[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#6 [mainstage 3/5] WORKDIR /opt/docker[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#6 sha256:e42ae32adf410bcc26098896e8ec8be99d6bc550dd1f311918a443e2830b3eea[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#6 CACHED[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#15 [mainstage 5/5] COPY --from=stage0 --chown=demiourgos728:root /2/opt/docker /opt/docker[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#15 sha256:b51e42fe4dcf279789186a64144db975e84392c40774efb2138a2f9dad348a5b[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#15 CACHED[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#16 exporting to image[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#16 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#16 exporting layers done[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#16 writing image sha256:d337f22d2a9b980fbef29aea6a8de16fb864008048870781dd35e7b237681671 done[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#16 naming to docker.io/library/calculator:0.1 done[0m[0J
+[0m[[0m[31merror[0m] [0m[0m#16 DONE 0.0s[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mUse 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate image(s) (labeled "snp-multi-stage-id=0d417019-3e74-424e-b4a3-d85e204e67bd") [0m[0J
+[0m[[0m[0minfo[0m] [0m[0mTotal reclaimed space: 0B[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mBuilt image calculator with tags [0.1][0m[0J

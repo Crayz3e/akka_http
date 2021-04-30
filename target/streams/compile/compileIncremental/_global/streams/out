@@ -1,37 +1,6 @@
-[debug] [zinc] IncrementalCompile -----------
-[debug] IncrementalCompile.incrementalCompile
-[debug] previous = Stamps for: 42 products, 12 sources, 11 libraries
-[debug] current source = Set(${BASE}/src/main/scala/Validator.scala, ${BASE}/src/main/scala/Router.scala, ${BASE}/src/main/scala/todoDirectives.scala, ${BASE}/src/main/scala/Calculator.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/ValidatorDirectives.scala, ${BASE}/src/main/scala/todoRepository.scala, ${BASE}/src/main/scala/SavedTodoRepository.scala, ${BASE}/src/main/scala/ApiError.scala, ${BASE}/src/main/scala/todo.scala, ${BASE}/src/main/scala/Server.scala)
-[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(${BASE}/src/main/scala/SavedTodo.scala), changed = Set(), unmodified = ...),Set(${BASE}/target/scala-2.13/classes/InMemoryTodoRepository$.class, ${BASE}/target/scala-2.13/classes/InMemoryTodoRepository.class),Set(),API Changes: Set())
-[debug] 
-[debug] Initial source changes:
-[debug] 	removed: Set(${BASE}/src/main/scala/SavedTodo.scala)
-[debug] 	added: Set()
-[debug] 	modified: Set()
-[debug] Invalidated products: Set(${BASE}/target/scala-2.13/classes/InMemoryTodoRepository$.class, ${BASE}/target/scala-2.13/classes/InMemoryTodoRepository.class)
-[debug] External API changes: API Changes: Set()
-[debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated classes: Set(InMemoryTodoRepository)
-[debug] Sources indirectly invalidated by:
-[debug] 	product: Set(${BASE}/src/main/scala/SavedTodo.scala)
-[debug] 	binary dep: Set()
-[debug] 	external source: Set()
-[debug] All initially invalidated classes: Set(InMemoryTodoRepository)
-[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/SavedTodo.scala)
-[debug] Initial set of included nodes: InMemoryTodoRepository
-[debug] compilation cycle 1
-[debug] Invalidating (transitively) by inheritance from InMemoryTodoRepository...
-[debug] Initial set of included nodes: InMemoryTodoRepository
-[debug] Invalidated by transitive inheritance dependency: Set(InMemoryTodoRepository)
-[debug] Change NamesChange(InMemoryTodoRepository,ModifiedNames(changes = UsedName(!=,[Default]), UsedName(equals,[Default]), UsedName(getClass,[Default]), UsedName(wait,[Default]), UsedName(done,[Default]), UsedName(notifyAll,[Default]), UsedName(isInstanceOf,[Default]), UsedName(finalize,[Default]), UsedName(<init>$default$1,[Default]), UsedName(hashCode,[Default]), UsedName(InMemoryTodoRepository;init;,[Default]), UsedName(clone,[Default]), UsedName(ne,[Default]), UsedName(notify,[Default]), UsedName(create,[Default]), UsedName(pending,[Default]), UsedName(toString,[Default]), UsedName(asInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(all,[Default]), UsedName(==,[Default]), UsedName(InMemoryTodoRepository,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]))) invalidates 1 classes due to The InMemoryTodoRepository has the following regular definitions changed:
-[debug] 	UsedName(!=,[Default]), UsedName(equals,[Default]), UsedName(getClass,[Default]), UsedName(wait,[Default]), UsedName(done,[Default]), UsedName(notifyAll,[Default]), UsedName(isInstanceOf,[Default]), UsedName(finalize,[Default]), UsedName(<init>$default$1,[Default]), UsedName(hashCode,[Default]), UsedName(InMemoryTodoRepository;init;,[Default]), UsedName(clone,[Default]), UsedName(ne,[Default]), UsedName(notify,[Default]), UsedName(create,[Default]), UsedName(pending,[Default]), UsedName(toString,[Default]), UsedName(asInstanceOf,[Default]), UsedName(synchronized,[Default]), UsedName(all,[Default]), UsedName(==,[Default]), UsedName(InMemoryTodoRepository,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]).
-[debug]   > by transitive inheritance: Set(InMemoryTodoRepository)
-[debug]   > 
-[debug]   > 
-[debug]         
-[debug] New invalidations:
-[debug] Initial set of included nodes: 
-[debug] Previously invalidated, but (transitively) depend on new invalidations:
-[debug] Final step, transitive dependencies:
-[debug] 	Set()
-[debug] No classes were invalidated.
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 40 products, 11 sources, 11 libraries[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/Validator.scala, ${BASE}/src/main/scala/Router.scala, ${BASE}/src/main/scala/todoDirectives.scala, ${BASE}/src/main/scala/Calculator.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/ValidatorDirectives.scala, ${BASE}/src/main/scala/todoRepository.scala, ${BASE}/src/main/scala/SavedTodoRepository.scala, ${BASE}/src/main/scala/ApiError.scala, ${BASE}/src/main/scala/todo.scala, ${BASE}/src/main/scala/Server.scala)[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m[0J

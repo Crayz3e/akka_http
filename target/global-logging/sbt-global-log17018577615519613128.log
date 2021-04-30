@@ -1,0 +1,11 @@
+[debug] > Exec(docker ps, None, None)
+[error] Expected ID character
+[error] Not a valid command: docker
+[error] Expected project ID
+[error] Expected configuration
+[error] Expected ':'
+[error] Expected key
+[error] Not a valid key: docker (similar: dockerCmd, dockerAlias, doc)
+[error] docker ps
+[error]       ^
+[debug] > Exec(idea-shell, None, None)

@@ -1,7 +1,2 @@
-[debug] Created transactional ClassFileManager with tempDir = C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes.bak
-[debug] About to delete class files:
-[debug] 	InMemoryTodoRepository$.class
-[debug] 	InMemoryTodoRepository.class
-[debug] We backup class files:
-[debug] Registering generated classes:
-[debug] Removing the temporary directory used for backing up class files: C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes.bak
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes.bak[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes.bak[0m[0J
