@@ -1,6 +1,38 @@
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m[0J
-[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m[0J
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 40 products, 11 sources, 11 libraries[0m[0J
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/Validator.scala, ${BASE}/src/main/scala/Router.scala, ${BASE}/src/main/scala/todoDirectives.scala, ${BASE}/src/main/scala/Calculator.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/ValidatorDirectives.scala, ${BASE}/src/main/scala/todoRepository.scala, ${BASE}/src/main/scala/SavedTodoRepository.scala, ${BASE}/src/main/scala/ApiError.scala, ${BASE}/src/main/scala/todo.scala, ${BASE}/src/main/scala/Server.scala)[0m[0J
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m[0J
-[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m[0J
+[debug] [zinc] IncrementalCompile -----------
+[debug] IncrementalCompile.incrementalCompile
+[debug] previous = Stamps for: 40 products, 11 sources, 11 libraries
+[debug] current source = Set(${BASE}/src/main/scala/Validator.scala, ${BASE}/src/main/scala/Router.scala, ${BASE}/src/main/scala/todoDirectives.scala, ${BASE}/src/main/scala/Calculator.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/ValidatorDirectives.scala, ${BASE}/src/main/scala/todoRepository.scala, ${BASE}/src/main/scala/SavedTodoRepository.scala, ${BASE}/src/main/scala/ApiError.scala, ${BASE}/src/main/scala/todo.scala, ${BASE}/src/main/scala/Server.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/Server.scala), unmodified = ...),Set(${BASE}/target/scala-2.13/classes/Server$.class),Set(),API Changes: Set())
+[debug] 
+[debug] Initial source changes:
+[debug] 	removed: Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(${BASE}/src/main/scala/Server.scala)
+[debug] Invalidated products: Set(${BASE}/target/scala-2.13/classes/Server$.class)
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated classes: Set(Server)
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set(${BASE}/src/main/scala/Server.scala)
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated classes: Set(Server)
+[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/Server.scala)
+[debug] Initial set of included nodes: Server
+[debug] compilation cycle 1
+[info] compiling 1 Scala source to C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.4.1:compile for Scala 2.13.5
+[debug] [zinc] Running cached compiler 44325775 for Scala compiler version 2.13.5
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.5\scala-library-2.13.5.jar
+[debug] 	-classpath
+[debug] 	C:\Users\Alibek\IdeaProjects\akka_http\calculator\target\scala-2.13\classes;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-actor-typed_2.13\2.6.8\akka-actor-typed_2.13-2.6.8.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-stream_2.13\2.6.8\akka-stream_2.13-2.6.8.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-http_2.13\10.2.4\akka-http_2.13-10.2.4.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-core_2.13\0.13.0\circe-core_2.13-0.13.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-generic_2.13\0.12.3\circe-generic_2.13-0.12.3.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-parser_2.13\0.13.0\circe-parser_2.13-0.13.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\de\heikoseeberger\akka-http-circe_2.13\1.36.0\akka-http-circe_2.13-1.36.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-actor_2.13\2.6.8\akka-actor_2.13-2.6.8.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-slf4j_2.13\2.6.8\akka-slf4j_2.13-2.6.8.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-protobuf-v3_2.13\2.6.8\akka-protobuf-v3_2.13-2.6.8.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\ssl-config-core_2.13\0.4.1\ssl-config-core_2.13-0.4.1.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-http-core_2.13\10.2.4\akka-http-core_2.13-10.2.4.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-numbers_2.13\0.13.0\circe-numbers_2.13-0.13.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-core_2.13\2.1.0\cats-core_2.13-2.1.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\chuusai\shapeless_2.13\2.3.3\shapeless_2.13-2.3.3.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-jawn_2.13\0.13.0\circe-jawn_2.13-0.13.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\config\1.4.0\config-1.4.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-java8-compat_2.13\0.9.0\scala-java8-compat_2.13-0.9.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parser-combinators_2.13\1.1.2\scala-parser-combinators_2.13-1.1.2.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\typesafe\akka\akka-parsing_2.13\10.2.4\akka-parsing_2.13-10.2.4.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\twitter\hpack\1.0.2\hpack-1.0.2.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-macros_2.13\2.1.0\cats-macros_2.13-2.1.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-kernel_2.13\2.1.0\cats-kernel_2.13-2.1.0.jar;C:\Users\Alibek\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\jawn-parser_2.13\1.0.0\jawn-parser_2.13-1.0.0.jar
+[debug] New invalidations:
+[debug] Initial set of included nodes: 
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] Final step, transitive dependencies:
+[debug] 	Set()
+[debug] No classes were invalidated.
+[debug] Scala compilation took 1.9388844 s
+[info] done compiling
